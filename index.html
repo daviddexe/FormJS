@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="jquery/jquery.min.js"></script>
+  <script src="jquery/jquery-3.3.1.min.js"></script>
+  <script src="jquery/jquery.mask.js"></script>
+  <script src="jquery/jquery.mask.min.js"></script>
+  <script src="script.js" defer></script>
+  <title>FORMULARIO</title>
+</head>
+
+<body>
+  <form action="#" class="form">
+    
+    <!-- Progress bar -->
+    <div class="progressbar">
+      <div class="progress" id="progress"></div>
+
+      <div class="progress-step progress-step-active" data-title="Dados"></div>
+      <div class="progress-step" data-title="Endereço"></div>
+      <div class="progress-step" data-title="Finalização"></div>
+    </div>
+
+    <!-- PRIMEIRA PAG -->
+    <div class="form-step form-step-active">
+      <h1 class="text-center">FAÇA SEU CADASTRO</h1>
+      <div class="input-group">
+        <label for="username">Nome</label>
+        <input autocomplete="off" onchange="toggleButton()" type="text"  id="username" />
+        <small>*campo obrigatório</small>
+      </div>
+      <div class="input-group">
+        <label for="cpf">CPF</label>
+        <input type="text" onchange="toggleButton()"  autocomplete="off" name="username" id="cpf" />
+        <small>*campo obrigatório</small>
+      </div>
+      <div class="input-group">
+        <label for="datanascimento">Data de Nascimento</label>
+        <input type="text"   autocomplete="off" id="date" />
+        <small>*campo obrigatório</small>
+      </div>
+      <div class="">
+        <button disabled onclick="salvar()" type="button" id="firstButton" class="btn btn-next width-50 ml-auto">Proximo </button>
+      </div>
+    </div> <!-- SEGUNDA PAG -->
+    <div class="form-step">
+      <h1 class="text-center">FAÇA SEU CADASTRO</h1>
+      <div class="input-group">
+        <label for="cep">CEP</label>
+        <input type="text"  autocomplete="off" id="cep" onchange="validaCep()" />
+        <small>*campo obrigatório</small>
+      </div>
+      <div class="input-group">
+        <label for="logradouro">Logradouro</label>
+        <input autocomplete="off" type="text" id="logradouro" />
+      </div>
+      <div class="input-group">
+        <label for="bairro">Bairro</label>
+        <input autocomplete="off" type="text"  id="bairro" / >
+      </div>
+      <div class="">
+        <label for="numero">Numero</label>
+        <input autocomplete="off" type="text" id="numero" />
+      </div>
+      <div class="input-group">
+        <label for="uf">UF</label>
+        <input type="text" class="form-control" id="uf">
+
+    </div>
+      <div class="btns-group">
+        <a href="#" class="btn btn-prev">Voltar</a>
+        <button disabled id="lastButton"  type="button" onclick="secondButton(); pullitem();" class="btn btn-next">Finalizar</button>
+      </div>
+    </div> <!-- ULTIMA PAG -->
+    
+      <div  class="form-step">
+        <h2>Obrigado por se cadastrar</h2>
+        <div id="ultimapag" class="input-group">
+          <h2 class="text-centerr" >Obrigado por se cadastrar</h2>
+          
+          <label for="dados">Dados</label>
+      
+        </div>
+    
+      
+    </div>
+    </div>
+    </div>
+  </form>
+</body>
+
+</html>
