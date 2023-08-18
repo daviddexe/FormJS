@@ -1,12 +1,11 @@
-:root {
-    --primary-color: rgb(11, 78, 179);
-  }
+
   
   *,
   *::before,
   *::after {
     box-sizing: border-box;
   }
+ 
   
   body {
     font-family: Montserrat, "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -14,7 +13,8 @@
     display: grid;
     place-items: center;
     min-height: 100vh;
-    background-image: url(hd-wallpaper-g83795b0f1_1920.jpg);
+    background-image: url(SL_043021_42650_22.jpg);
+    
   }
   /* Global Stylings */
   label {
