@@ -5,17 +5,16 @@
   *::after {
     box-sizing: border-box;
   }
- 
-  
-  body {
+  body{
+    background-image: url(files/abstract-3291293_1920.jpg);
     font-family: Montserrat, "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     display: grid;
     place-items: center;
     min-height: 100vh;
-    background-image: url(SL_043021_42650_22.jpg);
-    
   }
+
+
   /* Global Stylings */
   label {
     display: block;
@@ -124,6 +123,7 @@
     border: 1px solid #ccc;
     border-radius: 0.35rem;
     padding: 1.5rem;
+    box-shadow: 2px 2px 2px 2px #808080  ;
   }
   
   .form-step {
@@ -163,14 +163,16 @@
     display: block;
     text-decoration: none;
     background-color: var(--primary-color);
-    color: #f3f3f3;
+    color: black;
+    font-weight: bold;
     text-align: center;
     border-radius: 0.25rem;
     cursor: pointer;
     transition: 0.3s;
   }
   .btn:hover {
-    box-shadow: 0 0 0 2px #fff, 0 0 0 3px var(--primary-color);
+    box-shadow: 0 0 0 2px black, 0 0 0 3px var(--primary-color);
+    font-weight: bold;
   }
 
   #ultimapag{
